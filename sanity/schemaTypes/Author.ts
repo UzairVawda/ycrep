@@ -10,26 +10,32 @@ export const author = defineType({
     defineField({
       name: "id",
       type: "number",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "name",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "username",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "email",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "image",
       type: "url",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "bio",
       type: "text",
+      validation: (Rule) => Rule.required(),
     }),
   ],
   preview: {

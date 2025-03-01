@@ -35,10 +35,10 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
           alt="thumbnail"
           className="w-full h-auto rounded-xl"
         />
-        <div className="space-y-5 mt-10 max-w-4xl mx-auto">
-          <div className="flex-between gap-5">
+        <div className="max-w-4xl mx-auto mt-10 space-y-5">
+          <div className="gap-5 flex-between">
             <Link
-              className="flex-between gap-5"
+              className="gap-5 flex-between"
               href={`/user/${post.author?._id}`}
             >
               <Image
@@ -49,7 +49,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
                 className="rounded-full drop-shadow-lg"
               />
               <div>
-                <p className="text-20-medium">{post.author.name}</p>
+                <p className="text-20-medium">{post.author?.name}</p>
                 <p className="text-16-medium !text-black-300">
                   {post.author?.username}
                 </p>
@@ -60,7 +60,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
           <h3 className="text-30-bold">Pitch Details</h3>
           {parsedContent ? (
             <article
-              className="prose max-w-4xl font-work-sans break-all"
+              className="max-w-4xl prose break-all font-work-sans"
               dangerouslySetInnerHTML={{ __html: parsedContent }}
             />
           ) : (

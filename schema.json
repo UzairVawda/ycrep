@@ -17,28 +17,28 @@
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "foreground": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "population": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "title": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -62,7 +62,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         },
         "lightVibrant": {
           "type": "objectAttribute",
@@ -70,7 +70,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         },
         "darkVibrant": {
           "type": "objectAttribute",
@@ -78,7 +78,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         },
         "vibrant": {
           "type": "objectAttribute",
@@ -86,7 +86,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         },
         "dominant": {
           "type": "objectAttribute",
@@ -94,7 +94,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         },
         "lightMuted": {
           "type": "objectAttribute",
@@ -102,7 +102,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         },
         "muted": {
           "type": "objectAttribute",
@@ -110,7 +110,7 @@
             "type": "inline",
             "name": "sanity.imagePaletteSwatch"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -133,21 +133,21 @@
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "width": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "aspectRatio": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -170,28 +170,28 @@
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "y": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "height": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "width": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -214,28 +214,28 @@
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "bottom": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "left": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "right": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -280,91 +280,91 @@
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "label": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "title": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "description": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "altText": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "sha1hash": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "extension": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "mimeType": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "size": {
         "type": "objectAttribute",
         "value": {
           "type": "number"
         },
-        "optional": true
+        "optional": false
       },
       "assetId": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "uploadId": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "path": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "url": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "source": {
         "type": "objectAttribute",
@@ -372,7 +372,7 @@
           "type": "inline",
           "name": "sanity.assetSourceData"
         },
-        "optional": true
+        "optional": false
       }
     }
   },
@@ -416,91 +416,91 @@
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "label": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "title": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "description": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "altText": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "sha1hash": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "extension": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "mimeType": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "size": {
         "type": "objectAttribute",
         "value": {
           "type": "number"
         },
-        "optional": true
+        "optional": false
       },
       "assetId": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "uploadId": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "path": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "url": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "metadata": {
         "type": "objectAttribute",
@@ -508,7 +508,7 @@
           "type": "inline",
           "name": "sanity.imageMetadata"
         },
-        "optional": true
+        "optional": false
       },
       "source": {
         "type": "objectAttribute",
@@ -516,7 +516,7 @@
           "type": "inline",
           "name": "sanity.assetSourceData"
         },
-        "optional": true
+        "optional": false
       }
     }
   },
@@ -539,7 +539,7 @@
             "type": "inline",
             "name": "geopoint"
           },
-          "optional": true
+          "optional": false
         },
         "dimensions": {
           "type": "objectAttribute",
@@ -547,7 +547,7 @@
             "type": "inline",
             "name": "sanity.imageDimensions"
           },
-          "optional": true
+          "optional": false
         },
         "palette": {
           "type": "objectAttribute",
@@ -555,35 +555,35 @@
             "type": "inline",
             "name": "sanity.imagePalette"
           },
-          "optional": true
+          "optional": false
         },
         "lqip": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "blurHash": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "hasAlpha": {
           "type": "objectAttribute",
           "value": {
             "type": "boolean"
           },
-          "optional": true
+          "optional": false
         },
         "isOpaque": {
           "type": "objectAttribute",
           "value": {
             "type": "boolean"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -606,21 +606,21 @@
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "lng": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "alt": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -643,21 +643,21 @@
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "id": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "url": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -702,7 +702,7 @@
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "slug": {
         "type": "objectAttribute",
@@ -710,7 +710,7 @@
           "type": "inline",
           "name": "slug"
         },
-        "optional": true
+        "optional": false
       },
       "author": {
         "type": "objectAttribute",
@@ -735,26 +735,26 @@
               "value": {
                 "type": "boolean"
               },
-              "optional": true
+              "optional": false
             }
           },
           "dereferencesTo": "author"
         },
-        "optional": true
+        "optional": false
       },
       "views": {
         "type": "objectAttribute",
         "value": {
           "type": "number"
         },
-        "optional": true
+        "optional": false
       },
       "description": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "category": {
         "type": "objectAttribute",
@@ -775,7 +775,7 @@
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       }
     }
   },
@@ -804,7 +804,7 @@
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -849,42 +849,42 @@
         "value": {
           "type": "number"
         },
-        "optional": true
+        "optional": false
       },
       "name": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "username": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "email": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "image": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       },
       "bio": {
         "type": "objectAttribute",
         "value": {
           "type": "string"
         },
-        "optional": true
+        "optional": false
       }
     }
   },

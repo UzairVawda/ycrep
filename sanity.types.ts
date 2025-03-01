@@ -15,44 +15,44 @@
 // Source: schema.json
 export type SanityImagePaletteSwatch = {
   _type: "sanity.imagePaletteSwatch";
-  background?: string;
-  foreground?: string;
-  population?: number;
-  title?: string;
+  background: string;
+  foreground: string;
+  population: number;
+  title: string;
 };
 
 export type SanityImagePalette = {
   _type: "sanity.imagePalette";
-  darkMuted?: SanityImagePaletteSwatch;
-  lightVibrant?: SanityImagePaletteSwatch;
-  darkVibrant?: SanityImagePaletteSwatch;
-  vibrant?: SanityImagePaletteSwatch;
-  dominant?: SanityImagePaletteSwatch;
-  lightMuted?: SanityImagePaletteSwatch;
-  muted?: SanityImagePaletteSwatch;
+  darkMuted: SanityImagePaletteSwatch;
+  lightVibrant: SanityImagePaletteSwatch;
+  darkVibrant: SanityImagePaletteSwatch;
+  vibrant: SanityImagePaletteSwatch;
+  dominant: SanityImagePaletteSwatch;
+  lightMuted: SanityImagePaletteSwatch;
+  muted: SanityImagePaletteSwatch;
 };
 
 export type SanityImageDimensions = {
   _type: "sanity.imageDimensions";
-  height?: number;
-  width?: number;
-  aspectRatio?: number;
+  height: number;
+  width: number;
+  aspectRatio: number;
 };
 
 export type SanityImageHotspot = {
   _type: "sanity.imageHotspot";
-  x?: number;
-  y?: number;
-  height?: number;
-  width?: number;
+  x: number;
+  y: number;
+  height: number;
+  width: number;
 };
 
 export type SanityImageCrop = {
   _type: "sanity.imageCrop";
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
 };
 
 export type SanityFileAsset = {
@@ -61,20 +61,20 @@ export type SanityFileAsset = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  originalFilename?: string;
-  label?: string;
-  title?: string;
-  description?: string;
-  altText?: string;
-  sha1hash?: string;
-  extension?: string;
-  mimeType?: string;
-  size?: number;
-  assetId?: string;
-  uploadId?: string;
-  path?: string;
-  url?: string;
-  source?: SanityAssetSourceData;
+  originalFilename: string;
+  label: string;
+  title: string;
+  description: string;
+  altText: string;
+  sha1hash: string;
+  extension: string;
+  mimeType: string;
+  size: number;
+  assetId: string;
+  uploadId: string;
+  path: string;
+  url: string;
+  source: SanityAssetSourceData;
 };
 
 export type SanityImageAsset = {
@@ -83,46 +83,46 @@ export type SanityImageAsset = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  originalFilename?: string;
-  label?: string;
-  title?: string;
-  description?: string;
-  altText?: string;
-  sha1hash?: string;
-  extension?: string;
-  mimeType?: string;
-  size?: number;
-  assetId?: string;
-  uploadId?: string;
-  path?: string;
-  url?: string;
-  metadata?: SanityImageMetadata;
-  source?: SanityAssetSourceData;
+  originalFilename: string;
+  label: string;
+  title: string;
+  description: string;
+  altText: string;
+  sha1hash: string;
+  extension: string;
+  mimeType: string;
+  size: number;
+  assetId: string;
+  uploadId: string;
+  path: string;
+  url: string;
+  metadata: SanityImageMetadata;
+  source: SanityAssetSourceData;
 };
 
 export type SanityImageMetadata = {
   _type: "sanity.imageMetadata";
-  location?: Geopoint;
-  dimensions?: SanityImageDimensions;
-  palette?: SanityImagePalette;
-  lqip?: string;
-  blurHash?: string;
-  hasAlpha?: boolean;
-  isOpaque?: boolean;
+  location: Geopoint;
+  dimensions: SanityImageDimensions;
+  palette: SanityImagePalette;
+  lqip: string;
+  blurHash: string;
+  hasAlpha: boolean;
+  isOpaque: boolean;
 };
 
 export type Geopoint = {
   _type: "geopoint";
-  lat?: number;
-  lng?: number;
-  alt?: number;
+  lat: number;
+  lng: number;
+  alt: number;
 };
 
 export type SanityAssetSourceData = {
   _type: "sanity.assetSourceData";
-  name?: string;
-  id?: string;
-  url?: string;
+  name: string;
+  id: string;
+  url: string;
 };
 
 export type Startup = {
@@ -131,25 +131,25 @@ export type Startup = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  title?: string;
-  slug?: Slug;
-  author?: {
+  title: string;
+  slug: Slug;
+  author: {
     _ref: string;
     _type: "reference";
-    _weak?: boolean;
+    _weak: boolean;
     [internalGroqTypeReferenceTo]?: "author";
   };
-  views?: number;
-  description?: string;
+  views: number;
+  description: string;
   category: string;
   image: string;
-  pitch?: string;
+  pitch: string;
 };
 
 export type Slug = {
   _type: "slug";
   current: string;
-  source?: string;
+  source: string;
 };
 
 export type Author = {
@@ -158,12 +158,12 @@ export type Author = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  id?: number;
-  name?: string;
-  username?: string;
-  email?: string;
-  image?: string;
-  bio?: string;
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  image: string;
+  bio: string;
 };
 
 export type Markdown = string;
@@ -182,55 +182,72 @@ export type STARTUP_QUERYResult = Array<{
   views: null;
   description: null;
   category: null;
-  image: string | null;
+  image: string;
   pitch: null;
 } | {
   _id: string;
-  title: string | null;
+  title: string;
   slug: null;
   _createdAt: string;
   author: null;
   views: null;
-  description: string | null;
+  description: string;
   category: null;
   image: null;
   pitch: null;
 } | {
   _id: string;
-  title: string | null;
-  slug: Slug | null;
+  title: string;
+  slug: Slug;
   _createdAt: string;
   author: {
     _id: string;
-    name: string | null;
-    image: string | null;
-    bio: string | null;
-  } | null;
-  views: number | null;
-  description: string | null;
+    name: string;
+    image: string;
+    bio: string;
+  };
+  views: number;
+  description: string;
   category: string;
   image: string;
-  pitch: string | null;
+  pitch: string;
 }>;
 // Variable: STARTUP_BY_ID_QUERY
 // Query: *[_type=="startup" && _id == $id][0]{  _id,   title,   slug,  _createdAt,  author -> {    _id,    name,    username,    image,     bio  },  views,  description,  category,  image,  pitch}
 export type STARTUP_BY_ID_QUERYResult = {
   _id: string;
-  title: string | null;
-  slug: Slug | null;
+  title: string;
+  slug: Slug;
   _createdAt: string;
   author: {
     _id: string;
-    name: string | null;
-    username: string | null;
-    image: string | null;
-    bio: string | null;
-  } | null;
-  views: number | null;
-  description: string | null;
+    name: string;
+    username: string;
+    image: string;
+    bio: string;
+  };
+  views: number;
+  description: string;
   category: string;
   image: string;
-  pitch: string | null;
+  pitch: string;
+} | null;
+// Variable: STARTUP_VIEWS_QUERY
+// Query: *[_type == "startup" && _id == $id][0]{  _id, views}
+export type STARTUP_VIEWS_QUERYResult = {
+  _id: string;
+  views: number;
+} | null;
+// Variable: AUTHOR_BY_GITHUB_ID_QUERY
+// Query: *[_type == "author" && id == $id][0]{    _id,    id,    name,    username,    email,    image,    bio}
+export type AUTHOR_BY_GITHUB_ID_QUERYResult = {
+  _id: string;
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  image: string;
+  bio: string;
 } | null;
 
 // Query TypeMap
@@ -239,5 +256,7 @@ declare module "@sanity/client" {
   interface SanityQueries {
     "*[_type==\"startup\" && defined(slug.current) && !defined($search) || title match $search || category match $search || author->name match $search] | order(_createdAt desc){\n    _id, \n    title, \n    slug,\n    _createdAt,\n    author -> {\n      _id,\n      name,\n      image, \n      bio\n    },\n    views,\n    description,\n    category,\n    image,\n    pitch\n}": STARTUP_QUERYResult;
     "*[_type==\"startup\" && _id == $id][0]{\n  _id, \n  title, \n  slug,\n  _createdAt,\n  author -> {\n    _id,\n    name,\n    username,\n    image, \n    bio\n  },\n  views,\n  description,\n  category,\n  image,\n  pitch\n}": STARTUP_BY_ID_QUERYResult;
+    "*[_type == \"startup\" && _id == $id][0]{\n  _id, views\n}": STARTUP_VIEWS_QUERYResult;
+    "\n*[_type == \"author\" && id == $id][0]{\n    _id,\n    id,\n    name,\n    username,\n    email,\n    image,\n    bio\n}\n": AUTHOR_BY_GITHUB_ID_QUERYResult;
   }
 }

@@ -8,6 +8,7 @@ export const startup = defineType({
     defineField({
       name: "title",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "slug",
@@ -15,19 +16,23 @@ export const startup = defineType({
       options: {
         source: "title",
       },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "author",
       type: "reference",
       to: { type: "author" },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "views",
       type: "number",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "description",
       type: "text",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "category",
@@ -43,6 +48,7 @@ export const startup = defineType({
     defineField({
       name: "pitch",
       type: "markdown",
+      validation: (Rule) => Rule.required(),
     }),
   ],
 });
